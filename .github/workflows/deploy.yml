@@ -1,0 +1,67 @@
+name: Deploy to S3
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: macos-26
+    environment: production
+    env:
+      AWS_REGION: ${{ vars.AWS_REGION }}
+      S3_BUCKET: ${{ vars.S3_BUCKET }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      - name: Cache Swift build
+        uses: actions/cache@v4
+        with:
+          path: .build
+          key: spm-${{ runner.os }}-${{ hashFiles('Package.resolved') }}
+          restore-keys: spm-${{ runner.os }}-
+
+      - name: Build site
+        run: swift run -c release
+
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Sync assets
+        run: |
+          aws s3 sync Build "s3://$S3_BUCKET" \
+            --delete \
+            --exclude "*.html" --exclude "*.xml" --exclude "*.rss" --exclude "*.txt" \
+            --cache-control "public, max-age=31536000, immutable"
+
+      - name: Sync pages
+        run: |
+          aws s3 sync Build "s3://$S3_BUCKET" \
+            --delete \
+            --exclude "*" \
+            --include "*.html" --include "*.xml" --include "*.rss" --include "*.txt" \
+            --cache-control "public, max-age=0, must-revalidate"
+
+      - name: Invalidate CloudFront
+        if: vars.CLOUDFRONT_DISTRIBUTION_ID != ''
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id "${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}" \
+            --paths "/*"
+
+      - name: Clean up build output
+        if: always()
+        run: rm -rf Build
