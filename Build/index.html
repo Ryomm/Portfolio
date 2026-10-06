@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="en" data-light-theme="light" data-dark-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Ryomm / Ryoko Matsusaka" />
+    <meta name="generator" content="Ignite v0.6.9" />
+    <title>Home – Portfolio</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="/css/ignite-core.min.css" rel="stylesheet" />
+    <link href="https://ryomm.com/" rel="canonical" />
+    <link type="application/rss+xml" title="RSS Feed" href="/feed.rss" rel="alternate" />
+    <script>(function() {
+    function getThemePreference() {
+        return localStorage.getItem('custom-theme') || 'auto';
+    }
+
+    function applyTheme(themeID) {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const lightThemeID = document.documentElement.getAttribute('data-light-theme') || 'light';
+        const darkThemeID = document.documentElement.getAttribute('data-dark-theme') || 'dark';
+        const actualThemeID = themeID === 'auto' ? (prefersDark ? darkThemeID : lightThemeID) : themeID;
+
+        document.documentElement.setAttribute('data-bs-theme', actualThemeID);
+        document.documentElement.setAttribute('data-theme-state', themeID);
+    }
+
+    function applySyntaxTheme() {
+        const syntaxTheme = getComputedStyle(document.documentElement)
+            .getPropertyValue('--syntax-highlight-theme').trim().replace(/"/g, '');
+
+        if (!syntaxTheme) return;
+
+        document.querySelectorAll('link[data-highlight-theme]').forEach(link => {
+            link.setAttribute('disabled', 'disabled');
+        });
+
+        const themeLink = document.querySelector(`link[data-highlight-theme="${syntaxTheme}"]`);
+        if (themeLink) {
+            themeLink.removeAttribute('disabled');
+        }
+    }
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        const currentTheme = getThemePreference();
+        if (currentTheme === 'auto') {
+            applyTheme('auto');
+            applySyntaxTheme();
+        }
+    });
+
+    const savedTheme = getThemePreference();
+    applyTheme(savedTheme);
+    applySyntaxTheme();
+})();
+</script>
+    <meta property="og:site_name" content="Ryomm" />
+    <meta property="og:title" content="Home" />
+    <meta name="twitter:title" content="Home" />
+    <meta property="og:url" content="https://ryomm.com/" />
+    <meta name="twitter:domain" content="ryomm.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:dnt" content="on" />
+  </head>
+  <body class="container">
+    <div class="ig-main-content">
+      <div class="row justify-content-start" style="padding: 20px">
+        <div class="col-md-4 align-self-start g-5">
+          <div class="vstack" style="gap: 32px">
+            <div class="mb-0 align-self-start vstack" style="gap: 8px">
+              <script src="/js/ryommcat-jiggle.js" class="mb-0 align-self-start"></script>
+              <img src="/images/ryommcat.png" alt="" class="img-fluid mb-0 align-self-start" style="width: 200px; height: 200px; cursor: pointer; transform-origin: 50% 100%; user-select: none" onclick="ryommcatJiggle(this)" />
+              <h1 class="mb-0 align-self-start">Ryomm</h1>
+              <p class="mb-0 align-self-start">iOS app developurr (pun intended)</p>
+            </div>
+            <div class="mb-0 align-self-start vstack" style="gap: 4px">
+              <a target="_blank" rel="noopener noreferrer" href="https://x.com/__ryomm" class="text-info mb-0 align-self-start link-plain">X</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/Ryomm" class="text-info mb-0 align-self-start link-plain">GitHub</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://speakerdeck.com/ryomm" class="text-info mb-0 align-self-start link-plain">SpeakerDeck1</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://speakerdeck.com/ktcryomm" class="text-info mb-0 align-self-start link-plain">SpeakerDeck2</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://note.com/ryommm" class="text-info mb-0 align-self-start link-plain">note</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://zenn.dev/ryomm" class="text-info mb-0 align-self-start link-plain">Zenn</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 align-self-start g-5">
+          <div class="vstack" style="gap: 16px">
+            <div class="mb-0 align-self-start">
+              <h2>Career</h2>
+              <div class="vstack gap-3">
+                <div class="mb-0 align-self-start vstack gap-2">
+                  <h3 class="mb-0 align-self-start">Work Experience</h3>
+                  <ul class="mb-0 align-self-start list-group list-group-flush">
+                    <div class="list-group-item">
+                      <div class="row justify-content-start">
+                        <div class="col-md-auto align-self-start g-1">
+                          <p class="mb-0" style="width: 160px">2023.10 - Present</p>
+                        </div>
+                        <div class="col align-self-start g-1">
+                          <div class="vstack">
+                            <p class="mb-0 align-self-start">KINTOテクノロジーズ株式会社</p>
+                            <p class="ig-text-xxSmall text-body-secondary mb-0 align-self-start">iOS App Developer</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item">
+                      <div class="row justify-content-start">
+                        <div class="col-md-auto align-self-start g-1">
+                          <p class="mb-0" style="width: 160px">2021.4 - 2023.9</p>
+                        </div>
+                        <div class="col align-self-start g-1">
+                          <div class="vstack">
+                            <p class="mb-0 align-self-start">ニフティ株式会社</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+                <div class="mb-0 align-self-start vstack gap-2">
+                  <h3 class="mb-0 align-self-start">Education</h3>
+                  <ul class="mb-0 align-self-start list-group list-group-flush">
+                    <div class="list-group-item">
+                      <div class="row justify-content-start">
+                        <div class="col-md-auto align-self-start g-1">
+                          <p class="mb-0" style="width: 160px">2021.3</p>
+                        </div>
+                        <div class="col align-self-start g-1">
+                          <div class="vstack">
+                            <p class="mb-0 align-self-start">東京都市大学メディア情報学部情報システム学科 卒</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="mb-0 align-self-start">
+              <h2>Works</h2>
+              <div class="vstack gap-3">
+                <script src="/js/works-filter.js" class="mb-0 align-self-start"></script>
+                <div class="mb-0 align-self-start hstack gap-2" aria-label="Filter works by kind">
+                  <button type="button" style="--bs-btn-color: var(--bs-body-color); --bs-btn-bg: var(--bs-secondary-bg); --bs-btn-border-color: transparent; --bs-btn-hover-color: var(--bs-body-color); --bs-btn-hover-bg: var(--bs-border-color); --bs-btn-hover-border-color: transparent; --bs-btn-active-color: var(--bs-body-bg); --bs-btn-active-bg: var(--bs-emphasis-color); --bs-btn-active-border-color: transparent; --bs-btn-font-weight: 500" class="rounded-pill active mb-0 align-self-center btn btn-sm" data-work-filter="all" aria-pressed="true" onclick="filterWorks(this)">All</button>
+                  <button type="button" style="--bs-btn-color: var(--bs-body-color); --bs-btn-bg: var(--bs-secondary-bg); --bs-btn-border-color: transparent; --bs-btn-hover-color: var(--bs-body-color); --bs-btn-hover-bg: var(--bs-border-color); --bs-btn-hover-border-color: transparent; --bs-btn-active-color: var(--bs-body-bg); --bs-btn-active-bg: var(--bs-emphasis-color); --bs-btn-active-border-color: transparent; --bs-btn-font-weight: 500" class="rounded-pill mb-0 align-self-center btn btn-sm" data-work-filter="talk" aria-pressed="false" onclick="filterWorks(this)">Talk</button>
+                  <button type="button" style="--bs-btn-color: var(--bs-body-color); --bs-btn-bg: var(--bs-secondary-bg); --bs-btn-border-color: transparent; --bs-btn-hover-color: var(--bs-body-color); --bs-btn-hover-bg: var(--bs-border-color); --bs-btn-hover-border-color: transparent; --bs-btn-active-color: var(--bs-body-bg); --bs-btn-active-bg: var(--bs-emphasis-color); --bs-btn-active-border-color: transparent; --bs-btn-font-weight: 500" class="rounded-pill mb-0 align-self-center btn btn-sm" data-work-filter="article" aria-pressed="false" onclick="filterWorks(this)">Article</button>
+                  <button type="button" style="--bs-btn-color: var(--bs-body-color); --bs-btn-bg: var(--bs-secondary-bg); --bs-btn-border-color: transparent; --bs-btn-hover-color: var(--bs-body-color); --bs-btn-hover-bg: var(--bs-border-color); --bs-btn-hover-border-color: transparent; --bs-btn-active-color: var(--bs-body-bg); --bs-btn-active-bg: var(--bs-emphasis-color); --bs-btn-active-border-color: transparent; --bs-btn-font-weight: 500" class="rounded-pill mb-0 align-self-center btn btn-sm" data-work-filter="project" aria-pressed="false" onclick="filterWorks(this)">Project</button>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="talk" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://files.speakerdeck.com/presentations/4909338af34d4ac6884d6e0fd01b2f25/slide_0.jpg?40548882" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-primary-subtle text-primary-emphasis rounded-pill">Talk</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://speakerdeck.com/ktcryomm/kyodai-modanka-daisakusen" class="stretched-link link-plain">巨大モノリシックアプリ モダン化大作戦</a></h5>
+                          <p class="mb-0 align-self-start">iOSDC Japan 2026</p>
+                          <p class="text-body-secondary mb-0 align-self-start">2026.09.12</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="article" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://res.cloudinary.com/zenn/image/upload/s--VQdTXPuE--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Upcoming%2520Features%2520%25E3%2581%2596%25E3%2581%25A3%25E3%2581%258F%25E3%2582%258A%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%2520%2540%2520Swift6.3%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ryomm%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzY5ODJhZjNhMDUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-success-subtle text-success-emphasis rounded-pill">Article</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://zenn.dev/ryomm/articles/829f21a6e24e05" class="stretched-link link-plain">Upcoming Features ざっくりまとめ @ Swift6.3</a></h5>
+                          <p class="text-body-secondary mb-0 align-self-start">2026.04.22</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="talk" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://files.speakerdeck.com/presentations/325cc32de30540d2bd666b860e6092dd/slide_0.jpg?38524351" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-primary-subtle text-primary-emphasis rounded-pill">Talk</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://speakerdeck.com/ktcryomm/tipkittips" class="stretched-link link-plain">TipKitTips</a></h5>
+                          <p class="mb-0 align-self-start">Hakodate.swift #1</p>
+                          <p class="text-body-secondary mb-0 align-self-start">2026.02.22</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="article" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://blog.kinto-technologies.com/assets/blog/authors/ryomm/2025-12-21/thumbnail.png" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-success-subtle text-success-emphasis rounded-pill">Article</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://blog.kinto-technologies.com/posts/2025-12-21_tipkit/" class="stretched-link link-plain">TipKit外部から表示状態をコントロールする</a></h5>
+                          <p class="text-body-secondary mb-0 align-self-start">2025.12.21</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="article" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://res.cloudinary.com/zenn/image/upload/s--C1W7EF0W--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2584%258F%25E5%2591%25B3%25E3%2582%2592%25E7%2590%2586%25E8%25A7%25A3%25E3%2581%2597%25E3%2581%25A6%25E4%25BD%25BF%25E3%2581%2586SwiftUI%25E3%2581%25AE%25E4%25BD%2599%25E7%2599%25BD%25E6%258C%2587%25E5%25AE%259A%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ryomm%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzY5ODJhZjNhMDUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-success-subtle text-success-emphasis rounded-pill">Article</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://zenn.dev/ryomm/articles/11e43ee453c343" class="stretched-link link-plain">意味を理解して使うSwiftUIの余白指定</a></h5>
+                          <p class="text-body-secondary mb-0 align-self-start">2025.12.08</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="talk" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://files.speakerdeck.com/presentations/340dc5b9512b4fa8bee929d0e3aa89a9/slide_0.jpg?37514545" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-primary-subtle text-primary-emphasis rounded-pill">Talk</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://speakerdeck.com/ktcryomm/naaxiong-di-yu-bai-noyi-wei-wokao-etekara-uishi-zhuang-sitekure" class="stretched-link link-plain">なあ兄弟、 余白の意味を考えてから UI実装してくれ！</a></h5>
+                          <p class="mb-0 align-self-start">Mobile Fusion Study @KTC</p>
+                          <p class="text-body-secondary mb-0 align-self-start">2025.11.26</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="talk" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://files.speakerdeck.com/presentations/8643952c794b4cef918a688d7ff87676/slide_0.jpg?38524126" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-primary-subtle text-primary-emphasis rounded-pill">Talk</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://speakerdeck.com/ryomm/qrkodonoshi-yang-tutenzhong-lei-annen" class="stretched-link link-plain">QRコードの仕様ってn種類あんねん</a></h5>
+                          <p class="mb-0 align-self-start">iOSDC Japan 2025 20分トーク</p>
+                          <p class="text-body-secondary mb-0 align-self-start">2025.09.20</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="article" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://blog.kinto-technologies.com/assets/blog/authors/ryomm/2025-04-21/thumbnail.png" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-success-subtle text-success-emphasis rounded-pill">Article</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://blog.kinto-technologies.com/posts/2025-04-21-SavingCICreditTips/" class="stretched-link link-plain">[iOS] すぐできる！CIクレジット超ドケチ節約術</a></h5>
+                          <p class="text-body-secondary mb-0 align-self-start">2025.04.21</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="talk" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://files.speakerdeck.com/presentations/f9d47bd5428c46c6a74cf8fd7db31913/slide_0.jpg?34097432" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-primary-subtle text-primary-emphasis rounded-pill">Talk</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://speakerdeck.com/ktcryomm/iosdeqrkodosheng-cheng-fen-dou-ji" class="stretched-link link-plain">iOSでQRコード生成奮闘記</a></h5>
+                          <p class="mb-0 align-self-start">集まれSwift好き！Swift愛好会 vol.92 @DeNA</p>
+                          <p class="text-body-secondary mb-0 align-self-start">2025.03.04</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="article" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://blog.kinto-technologies.com/assets/blog/authors/ryomm/2024-12-24/thumbnail.png" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-success-subtle text-success-emphasis rounded-pill">Article</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://blog.kinto-technologies.com/posts/2024-12-24-myroute-ios-spm/" class="stretched-link link-plain">my routeアプリにSwift Package Managerがやってきた！</a></h5>
+                          <p class="text-body-secondary mb-0 align-self-start">2025.01.20</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" data-work-kind="project">
+                  <div class="card-body">
+                    <div class="vstack gap-1">
+                      <span class="mb-0 align-self-start badge bg-warning-subtle text-warning-emphasis rounded-pill">Project</span>
+                      <h5 class="mb-0 align-self-start">あああ</h5>
+                      <p class="text-body-secondary mb-0 align-self-start">2025.01.01</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="article" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://res.cloudinary.com/zenn/image/upload/s--aHHjKpVP--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590SwiftUI%25E3%2580%2591ImageAsset%25E3%2581%25AE%25E3%2583%25AD%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25A9%25E3%2582%25A4%25E3%2582%25BA%25E3%2581%258C%25E3%2581%25A7%25E3%2581%258D%25E3%2581%25AA%25E3%2581%2584%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ryomm%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzY5ODJhZjNhMDUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-success-subtle text-success-emphasis rounded-pill">Article</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://zenn.dev/ryomm/articles/9c18e83e813317" class="stretched-link link-plain">【SwiftUI】ImageAssetのローカライズができない</a></h5>
+                          <p class="text-body-secondary mb-0 align-self-start">2024.12.18</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="article" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://res.cloudinary.com/zenn/image/upload/s--zYgBl3li--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Swift%25E3%2580%2591Bool%25E3%2581%25AE%25E9%2585%258D%25E5%2588%2597%25E3%2581%25AE%25E8%25AB%2596%25E7%2590%2586%25E5%2592%258C%252F%25E8%25AB%2596%25E7%2590%2586%25E7%25A9%258D%25E3%2582%2592%25E5%258F%2596%25E5%25BE%2597%25E3%2581%2597%25E3%2581%259F%25E3%2581%2584%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ryomm%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzY5ODJhZjNhMDUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-success-subtle text-success-emphasis rounded-pill">Article</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://zenn.dev/ryomm/articles/bdd5b0d3b54579" class="stretched-link link-plain">【Swift】Boolの配列の論理和/論理積を取得したい</a></h5>
+                          <p class="text-body-secondary mb-0 align-self-start">2024.12.13</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="article" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://blog.kinto-technologies.com/assets/blog/authors/ryomm/2024-12-11/thumbnail.png" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-success-subtle text-success-emphasis rounded-pill">Article</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://blog.kinto-technologies.com/posts/2024-12-11-SwiftUI-CustomStyle/" class="stretched-link link-plain">【SwiftUI】独自のStyleを定義してスタイリッシュなコードを書こう</a></h5>
+                          <p class="text-body-secondary mb-0 align-self-start">2024.12.11</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="talk" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://files.speakerdeck.com/presentations/0efa9919c1584da19f64b3ba62711e8b/slide_0.jpg?32937158" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-primary-subtle text-primary-emphasis rounded-pill">Talk</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://speakerdeck.com/ktcryomm/ios18deqrkodogabiao-shi-sarenakunatuta" class="stretched-link link-plain">iOS18でQRコードが表示されなくなった🤷</a></h5>
+                          <p class="mb-0 align-self-start">KTC×WED×フェンリル 3社合同イベント</p>
+                          <p class="text-body-secondary mb-0 align-self-start">2024.12.06</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="article" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://blog.kinto-technologies.com/assets/blog/authors/ryomm/2024-12-04-2/thumbnail.png" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-success-subtle text-success-emphasis rounded-pill">Article</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://blog.kinto-technologies.com/posts/2024-12-04_slackcli_blockid/" class="stretched-link link-plain">【Slack CLI】block_idが衝突してSlackにメッセージを送れない</a></h5>
+                          <p class="text-body-secondary mb-0 align-self-start">2024.12.05</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="article" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://blog.kinto-technologies.com/assets/blog/authors/ryomm/2024-12-04/thumbnail.png" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-success-subtle text-success-emphasis rounded-pill">Article</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://blog.kinto-technologies.com/posts/2024-12-04_manabyi/" class="stretched-link link-plain">【学びの道の駅シリーズ】超エキサイティングなSlack bot「まなびぃ」つくった</a></h5>
+                          <p class="text-body-secondary mb-0 align-self-start">2024.12.04</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="talk" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://files.speakerdeck.com/presentations/460ae85459dd4ec3b6010a4c863f1b9d/slide_0.jpg?31432509" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-primary-subtle text-primary-emphasis rounded-pill">Talk</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://speakerdeck.com/ktcryomm/riyomukiyatutono-pahuekutoswiftnemingujiao-shi" class="stretched-link link-plain">リョムキャットのパーフェクトSwiftネーミング教室</a></h5>
+                          <p class="mb-0 align-self-start">iOSDC Japan 2024 ルーキーズLT</p>
+                          <p class="text-body-secondary mb-0 align-self-start">2024.08.23</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="article" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://blog.kinto-technologies.com/assets/blog/authors/ryomm/2024-08-09-SlackTiger/thumbnail.png" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-success-subtle text-success-emphasis rounded-pill">Article</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://blog.kinto-technologies.com/posts/2024-08-09-SlackTiger/" class="stretched-link link-plain">Slack虎の巻🐯</a></h5>
+                          <p class="text-body-secondary mb-0 align-self-start">2024.08.09</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="article" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://blog.kinto-technologies.com/assets/blog/authors/ryomm/2024-08-12/thumbnail.png" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-success-subtle text-success-emphasis rounded-pill">Article</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://blog.kinto-technologies.com/posts/2024-08-07-UITextViewRepresentableTaihen/" class="stretched-link link-plain">UITextViewをSwiftUIで使えるようにUIViewRepresentableする</a></h5>
+                          <p class="text-body-secondary mb-0 align-self-start">2024.08.07</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="talk" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://files.speakerdeck.com/presentations/275c1b66e9ad4df28f32de2329efefa1/slide_0.jpg?31208469" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-primary-subtle text-primary-emphasis rounded-pill">Talk</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://speakerdeck.com/ktcryomm/slackwoshi-ikonase-slackxiao-lu-3000bei" class="stretched-link link-plain">Slackを使いこなせ！Slack効率3000倍</a></h5>
+                          <p class="mb-0 align-self-start">KTC室町情報共有会 LT大会 七夕スペシャル</p>
+                          <p class="text-body-secondary mb-0 align-self-start">2024.07.05</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="talk" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://files.speakerdeck.com/presentations/f09cb8982a5f4f508bd4313abf2b98a2/slide_0.jpg?30782380" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-primary-subtle text-primary-emphasis rounded-pill">Talk</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://speakerdeck.com/ryomm/bring-your-apps-core-features-to-users-with-app-intents-tokaapp-intentsguan-lian-noyao-yue" class="stretched-link link-plain">Bring your app’s core features to users with App Intents とか App Intents 関連の要約</a></h5>
+                          <p class="mb-0 align-self-start">Swift愛好会スピンオフ WWDC24セッション要約会</p>
+                          <p class="text-body-secondary mb-0 align-self-start">2024.06.26</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="article" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://blog.kinto-technologies.com/assets/blog/authors/ryomm/2024-04-26/thumbnail.png" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-success-subtle text-success-emphasis rounded-pill">Article</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://blog.kinto-technologies.com/posts/2024-04-26_CreateSnapshotTestRefarenceOnAnySubdirectory/" class="stretched-link link-plain">[iOS] Snapshot Test のリファレンス画像を任意のディレクトリに作成する</a></h5>
+                          <p class="text-body-secondary mb-0 align-self-start">2024.04.26</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="article" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://blog.kinto-technologies.com/assets/blog/authors/ryomm/2024-04-17-SnapshotTest/myroute_thumbnail.png" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-success-subtle text-success-emphasis rounded-pill">Article</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://blog.kinto-technologies.com/posts/2024-04-17-SnapshotTest/" class="stretched-link link-plain">my routeアプリにスナップショットテストを導入しました</a></h5>
+                          <p class="text-body-secondary mb-0 align-self-start">2024.04.22</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="article" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://res.cloudinary.com/zenn/image/upload/s--vfeHL3Ag--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2589%258B%25E3%2581%258C%25E3%2581%258B%25E3%2582%2586%25E3%2581%258F%25E3%2581%25AA%25E3%2582%258B%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E4%25BD%259C%25E3%2582%258A%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ryomm%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzY5ODJhZjNhMDUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-success-subtle text-success-emphasis rounded-pill">Article</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://zenn.dev/ryomm/articles/c6e514efe986d8" class="stretched-link link-plain">手がかゆくなるアプリ作りました</a></h5>
+                          <p class="text-body-secondary mb-0 align-self-start">2023.12.14</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="article" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://engineering.nifty.co.jp/wp-content/uploads/2023/09/7dd4c3f74f006b34bb1d70d7adebd54e.png" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-success-subtle text-success-emphasis rounded-pill">Article</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://engineering.nifty.co.jp/blog/21007" class="stretched-link link-plain">CheesyKotlin特別編 – Compose Animation 100本勝負 – を公開しました - NIFTY engineering</a></h5>
+                          <p class="text-body-secondary mb-0 align-self-start">2023.09.08</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="article" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://engineering.nifty.co.jp/wp-content/uploads/2023/02/7bba0ff39e64ab0aa7fb636dfd33b3e0-scaled.jpg" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-success-subtle text-success-emphasis rounded-pill">Article</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://engineering.nifty.co.jp/blog/15769" class="stretched-link link-plain">Swift-DocCを使ってオリジナルのiOSチュートリアルを作ってみた - NIFTY engineering</a></h5>
+                          <p class="text-body-secondary mb-0 align-self-start">2023.03.01</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="article" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://engineering.nifty.co.jp/wp-content/uploads/2022/12/pexels-pineapple-supply-co-47454.jpg" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-success-subtle text-success-emphasis rounded-pill">Article</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://engineering.nifty.co.jp/blog/13698" class="stretched-link link-plain">Slackでスタンプラリーを行えるbotを作ってみた - NIFTY engineering</a></h5>
+                          <p class="text-body-secondary mb-0 align-self-start">2022.12.24</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="article" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://engineering.nifty.co.jp/wp-content/uploads/2022/05/pexels-pineapple-supply-co-1071882-scaled.jpg" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-success-subtle text-success-emphasis rounded-pill">Article</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://engineering.nifty.co.jp/blog/7008" class="stretched-link link-plain">Notion×DynamoDB連携を模索してみる（前編） - NIFTY engineering</a></h5>
+                          <p class="text-body-secondary mb-0 align-self-start">2022.06.01</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="transition: background-color 0.2s ease" data-work-kind="article" onmouseover="this.unhoveredStyle = this.style.cssText;
+this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="https://res.cloudinary.com/zenn/image/upload/s--6pDyCWOs--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%259F%25A5%25E8%25AD%25980%25E3%2581%258B%25E3%2582%2589RaspberryPi4%25E3%2581%25A7%25E9%258C%25B2%25E7%2594%25BB%25E6%25A9%259F%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%25EF%25BC%2581%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ryomm%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzY5ODJhZjNhMDUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-success-subtle text-success-emphasis rounded-pill">Article</span>
+                          <h5 class="mb-0 align-self-start"><a target="_blank" rel="noopener noreferrer" href="https://zenn.dev/ryomm/articles/332bf27f8561da" class="stretched-link link-plain">知識0からRaspberryPi4で録画機を作る！</a></h5>
+                          <p class="text-body-secondary mb-0 align-self-start">2021.06.28</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5 vstack gap-2" style="padding: 20px">
+      <script src="/js/ryommcat-jiggle.js" class="mb-0 align-self-center"></script>
+      <img src="/images/ryommcat.png" alt="" class="img-fluid mb-0 align-self-center" style="width: 50px; height: 50px; cursor: pointer; transform-origin: 50% 100%; user-select: none" onclick="ryommcatJiggle(this)" />
+      <div class="text-center mb-0 align-self-center hstack gap-3">
+        <p class="mb-0 align-self-center">© 2026 Ryomm</p>
+        <p class="mb-0 align-self-center">Created in Swift with <a href="https://github.com/twostraws/Ignite">Ignite</a></p>
+      </div>
+    </div>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/ignite-core.js"></script>
+  </body>
+</html>

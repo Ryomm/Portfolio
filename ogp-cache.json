@@ -1,0 +1,147 @@
+{
+  "https://blog.kinto-technologies.com/posts/2024-04-17-SnapshotTest/" : {
+    "fetchedAt" : "2026-10-06T08:42:24Z",
+    "image" : "https://blog.kinto-technologies.com/assets/blog/authors/ryomm/2024-04-17-SnapshotTest/myroute_thumbnail.png",
+    "title" : "my routeアプリにスナップショットテストを導入しました"
+  },
+  "https://blog.kinto-technologies.com/posts/2024-04-26_CreateSnapshotTestRefarenceOnAnySubdirectory/" : {
+    "fetchedAt" : "2026-10-06T09:51:23Z",
+    "image" : "https://blog.kinto-technologies.com/assets/blog/authors/ryomm/2024-04-26/thumbnail.png",
+    "title" : "[iOS] Snapshot Test のリファレンス画像を任意のディレクトリに作成する"
+  },
+  "https://blog.kinto-technologies.com/posts/2024-08-07-UITextViewRepresentableTaihen/" : {
+    "fetchedAt" : "2026-10-06T09:51:23Z",
+    "image" : "https://blog.kinto-technologies.com/assets/blog/authors/ryomm/2024-08-12/thumbnail.png",
+    "title" : "UITextViewをSwiftUIで使えるようにUIViewRepresentableする"
+  },
+  "https://blog.kinto-technologies.com/posts/2024-08-09-SlackTiger/" : {
+    "fetchedAt" : "2026-10-06T09:51:23Z",
+    "image" : "https://blog.kinto-technologies.com/assets/blog/authors/ryomm/2024-08-09-SlackTiger/thumbnail.png",
+    "title" : "Slack虎の巻🐯"
+  },
+  "https://blog.kinto-technologies.com/posts/2024-12-04_manabyi/" : {
+    "fetchedAt" : "2026-10-06T09:51:23Z",
+    "image" : "https://blog.kinto-technologies.com/assets/blog/authors/ryomm/2024-12-04/thumbnail.png",
+    "title" : "【学びの道の駅シリーズ】超エキサイティングなSlack bot「まなびぃ」つくった"
+  },
+  "https://blog.kinto-technologies.com/posts/2024-12-04_slackcli_blockid/" : {
+    "fetchedAt" : "2026-10-06T09:51:23Z",
+    "image" : "https://blog.kinto-technologies.com/assets/blog/authors/ryomm/2024-12-04-2/thumbnail.png",
+    "title" : "【Slack CLI】block_idが衝突してSlackにメッセージを送れない"
+  },
+  "https://blog.kinto-technologies.com/posts/2024-12-11-SwiftUI-CustomStyle/" : {
+    "fetchedAt" : "2026-10-06T09:51:23Z",
+    "image" : "https://blog.kinto-technologies.com/assets/blog/authors/ryomm/2024-12-11/thumbnail.png",
+    "title" : "【SwiftUI】独自のStyleを定義してスタイリッシュなコードを書こう"
+  },
+  "https://blog.kinto-technologies.com/posts/2024-12-24-myroute-ios-spm/" : {
+    "fetchedAt" : "2026-10-06T09:51:23Z",
+    "image" : "https://blog.kinto-technologies.com/assets/blog/authors/ryomm/2024-12-24/thumbnail.png",
+    "title" : "my routeアプリにSwift Package Managerがやってきた！"
+  },
+  "https://blog.kinto-technologies.com/posts/2025-04-21-SavingCICreditTips/" : {
+    "fetchedAt" : "2026-10-06T09:51:23Z",
+    "image" : "https://blog.kinto-technologies.com/assets/blog/authors/ryomm/2025-04-21/thumbnail.png",
+    "title" : "[iOS] すぐできる！CIクレジット超ドケチ節約術"
+  },
+  "https://blog.kinto-technologies.com/posts/2025-12-21_tipkit/" : {
+    "fetchedAt" : "2026-10-06T09:51:23Z",
+    "image" : "https://blog.kinto-technologies.com/assets/blog/authors/ryomm/2025-12-21/thumbnail.png",
+    "title" : "TipKit外部から表示状態をコントロールする"
+  },
+  "https://engineering.nifty.co.jp/blog/13698" : {
+    "fetchedAt" : "2026-10-06T09:51:24Z",
+    "image" : "https://engineering.nifty.co.jp/wp-content/uploads/2022/12/pexels-pineapple-supply-co-47454.jpg",
+    "title" : "Slackでスタンプラリーを行えるbotを作ってみた - NIFTY engineering"
+  },
+  "https://engineering.nifty.co.jp/blog/15769" : {
+    "fetchedAt" : "2026-10-06T09:51:23Z",
+    "image" : "https://engineering.nifty.co.jp/wp-content/uploads/2023/02/7bba0ff39e64ab0aa7fb636dfd33b3e0-scaled.jpg",
+    "title" : "Swift-DocCを使ってオリジナルのiOSチュートリアルを作ってみた - NIFTY engineering"
+  },
+  "https://engineering.nifty.co.jp/blog/21007" : {
+    "fetchedAt" : "2026-10-06T09:51:23Z",
+    "image" : "https://engineering.nifty.co.jp/wp-content/uploads/2023/09/7dd4c3f74f006b34bb1d70d7adebd54e.png",
+    "title" : "CheesyKotlin特別編 – Compose Animation 100本勝負 – を公開しました - NIFTY engineering"
+  },
+  "https://engineering.nifty.co.jp/blog/7008" : {
+    "fetchedAt" : "2026-10-06T09:51:23Z",
+    "image" : "https://engineering.nifty.co.jp/wp-content/uploads/2022/05/pexels-pineapple-supply-co-1071882-scaled.jpg",
+    "title" : "Notion×DynamoDB連携を模索してみる（前編） - NIFTY engineering"
+  },
+  "https://speakerdeck.com/ktcryomm/ios18deqrkodogabiao-shi-sarenakunatuta" : {
+    "fetchedAt" : "2026-10-06T09:51:24Z",
+    "image" : "https://files.speakerdeck.com/presentations/0efa9919c1584da19f64b3ba62711e8b/slide_0.jpg?32937158",
+    "title" : "iOS18でQRコードが表示されなくなった🤷"
+  },
+  "https://speakerdeck.com/ktcryomm/iosdeqrkodosheng-cheng-fen-dou-ji" : {
+    "fetchedAt" : "2026-10-06T09:51:24Z",
+    "image" : "https://files.speakerdeck.com/presentations/f9d47bd5428c46c6a74cf8fd7db31913/slide_0.jpg?34097432",
+    "title" : "iOSでQRコード生成奮闘記"
+  },
+  "https://speakerdeck.com/ktcryomm/kyodai-modanka-daisakusen" : {
+    "fetchedAt" : "2026-10-06T09:51:25Z",
+    "image" : "https://files.speakerdeck.com/presentations/4909338af34d4ac6884d6e0fd01b2f25/slide_0.jpg?40548882",
+    "title" : "巨大モノリシックアプリ モダン化大作戦"
+  },
+  "https://speakerdeck.com/ktcryomm/naaxiong-di-yu-bai-noyi-wei-wokao-etekara-uishi-zhuang-sitekure" : {
+    "fetchedAt" : "2026-10-06T09:51:24Z",
+    "image" : "https://files.speakerdeck.com/presentations/340dc5b9512b4fa8bee929d0e3aa89a9/slide_0.jpg?37514545",
+    "title" : "なあ兄弟、 余白の意味を考えてから UI実装してくれ！"
+  },
+  "https://speakerdeck.com/ktcryomm/riyomukiyatutono-pahuekutoswiftnemingujiao-shi" : {
+    "fetchedAt" : "2026-10-06T09:51:24Z",
+    "image" : "https://files.speakerdeck.com/presentations/460ae85459dd4ec3b6010a4c863f1b9d/slide_0.jpg?31432509",
+    "title" : "リョムキャットのパーフェクトSwiftネーミング教室"
+  },
+  "https://speakerdeck.com/ktcryomm/slackwoshi-ikonase-slackxiao-lu-3000bei" : {
+    "fetchedAt" : "2026-10-06T09:51:23Z",
+    "image" : "https://files.speakerdeck.com/presentations/275c1b66e9ad4df28f32de2329efefa1/slide_0.jpg?31208469",
+    "title" : "Slackを使いこなせ！Slack効率3000倍"
+  },
+  "https://speakerdeck.com/ktcryomm/tipkittips" : {
+    "fetchedAt" : "2026-10-06T09:51:24Z",
+    "image" : "https://files.speakerdeck.com/presentations/325cc32de30540d2bd666b860e6092dd/slide_0.jpg?38524351",
+    "title" : "TipKitTips"
+  },
+  "https://speakerdeck.com/ryomm/bring-your-apps-core-features-to-users-with-app-intents-tokaapp-intentsguan-lian-noyao-yue" : {
+    "fetchedAt" : "2026-10-06T09:51:24Z",
+    "image" : "https://files.speakerdeck.com/presentations/f09cb8982a5f4f508bd4313abf2b98a2/slide_0.jpg?30782380",
+    "title" : "Bring your app’s core features to users with App Intents とか App Intents 関連の要約"
+  },
+  "https://speakerdeck.com/ryomm/qrkodonoshi-yang-tutenzhong-lei-annen" : {
+    "fetchedAt" : "2026-10-06T09:51:24Z",
+    "image" : "https://files.speakerdeck.com/presentations/8643952c794b4cef918a688d7ff87676/slide_0.jpg?38524126",
+    "title" : "QRコードの仕様ってn種類あんねん"
+  },
+  "https://zenn.dev/ryomm/articles/11e43ee453c343" : {
+    "fetchedAt" : "2026-10-06T09:51:23Z",
+    "image" : "https://res.cloudinary.com/zenn/image/upload/s--C1W7EF0W--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2584%258F%25E5%2591%25B3%25E3%2582%2592%25E7%2590%2586%25E8%25A7%25A3%25E3%2581%2597%25E3%2581%25A6%25E4%25BD%25BF%25E3%2581%2586SwiftUI%25E3%2581%25AE%25E4%25BD%2599%25E7%2599%25BD%25E6%258C%2587%25E5%25AE%259A%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ryomm%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzY5ODJhZjNhMDUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title" : "意味を理解して使うSwiftUIの余白指定"
+  },
+  "https://zenn.dev/ryomm/articles/332bf27f8561da" : {
+    "fetchedAt" : "2026-10-06T09:51:23Z",
+    "image" : "https://res.cloudinary.com/zenn/image/upload/s--6pDyCWOs--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%259F%25A5%25E8%25AD%25980%25E3%2581%258B%25E3%2582%2589RaspberryPi4%25E3%2581%25A7%25E9%258C%25B2%25E7%2594%25BB%25E6%25A9%259F%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%25EF%25BC%2581%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ryomm%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzY5ODJhZjNhMDUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title" : "知識0からRaspberryPi4で録画機を作る！"
+  },
+  "https://zenn.dev/ryomm/articles/829f21a6e24e05" : {
+    "fetchedAt" : "2026-10-06T09:51:23Z",
+    "image" : "https://res.cloudinary.com/zenn/image/upload/s--VQdTXPuE--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Upcoming%2520Features%2520%25E3%2581%2596%25E3%2581%25A3%25E3%2581%258F%25E3%2582%258A%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%2520%2540%2520Swift6.3%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ryomm%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzY5ODJhZjNhMDUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title" : "Upcoming Features ざっくりまとめ @ Swift6.3"
+  },
+  "https://zenn.dev/ryomm/articles/9c18e83e813317" : {
+    "fetchedAt" : "2026-10-06T09:51:23Z",
+    "image" : "https://res.cloudinary.com/zenn/image/upload/s--aHHjKpVP--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590SwiftUI%25E3%2580%2591ImageAsset%25E3%2581%25AE%25E3%2583%25AD%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25A9%25E3%2582%25A4%25E3%2582%25BA%25E3%2581%258C%25E3%2581%25A7%25E3%2581%258D%25E3%2581%25AA%25E3%2581%2584%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ryomm%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzY5ODJhZjNhMDUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title" : "【SwiftUI】ImageAssetのローカライズができない"
+  },
+  "https://zenn.dev/ryomm/articles/bdd5b0d3b54579" : {
+    "fetchedAt" : "2026-10-06T09:51:23Z",
+    "image" : "https://res.cloudinary.com/zenn/image/upload/s--zYgBl3li--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Swift%25E3%2580%2591Bool%25E3%2581%25AE%25E9%2585%258D%25E5%2588%2597%25E3%2581%25AE%25E8%25AB%2596%25E7%2590%2586%25E5%2592%258C%252F%25E8%25AB%2596%25E7%2590%2586%25E7%25A9%258D%25E3%2582%2592%25E5%258F%2596%25E5%25BE%2597%25E3%2581%2597%25E3%2581%259F%25E3%2581%2584%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ryomm%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzY5ODJhZjNhMDUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title" : "【Swift】Boolの配列の論理和/論理積を取得したい"
+  },
+  "https://zenn.dev/ryomm/articles/c6e514efe986d8" : {
+    "fetchedAt" : "2026-10-06T09:51:23Z",
+    "image" : "https://res.cloudinary.com/zenn/image/upload/s--vfeHL3Ag--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2589%258B%25E3%2581%258C%25E3%2581%258B%25E3%2582%2586%25E3%2581%258F%25E3%2581%25AA%25E3%2582%258B%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E4%25BD%259C%25E3%2582%258A%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ryomm%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzY5ODJhZjNhMDUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title" : "手がかゆくなるアプリ作りました"
+  }
+}
