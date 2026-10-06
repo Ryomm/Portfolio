@@ -2,6 +2,20 @@ const RYOMMCAT_MAX_COUNT = 4;
 const RYOMMCAT_POP_DELAY = 500;
 const RYOMMCAT_DROP_HEIGHT = 16;
 
+// Mirrors the squash-and-stretch keyframes in ryommcat-jiggle.js so the
+// landing bounce below can be stitched directly onto the fall with no gap.
+// Kept as a local copy (not a shared export) because ryommcat-jiggle.js is
+// included multiple times on the page and must stay self-contained.
+const RYOMMCAT_LANDING_JIGGLE_KEYFRAMES = [
+    { transform: 'scale3d(1, 1, 1)', offset: 0 },
+    { transform: 'scale3d(1.25, 0.75, 1)', offset: 0.2 },
+    { transform: 'scale3d(0.8, 1.2, 1)', offset: 0.4 },
+    { transform: 'scale3d(1.12, 0.9, 1)', offset: 0.6 },
+    { transform: 'scale3d(0.95, 1.05, 1)', offset: 0.8 },
+    { transform: 'scale3d(1, 1, 1)', offset: 1 }
+];
+const RYOMMCAT_LANDING_JIGGLE_DURATION = 800;
+
 // Called from the footer ryommcat image's onclick. Jiggles every cat in the
 // container and, as long as we haven't hit the limit, spawns a clone next to
 // the clicked one. Once the limit is reached, every cat pops like a slime
@@ -60,21 +74,21 @@ function ryommcatPop(container) {
             // Drop back in from slightly above, landing straight into the
             // jiggle keyframes with no gap between the two animations.
             const fallDuration = 150;
-            const totalDuration = fallDuration + RYOMMCAT_JIGGLE_DURATION;
-            const fallEnd = fallDuration / totalDuration;
+            const landingDuration = fallDuration + RYOMMCAT_LANDING_JIGGLE_DURATION;
+            const fallEnd = fallDuration / landingDuration;
             const remap = offset => fallEnd + offset * (1 - fallEnd);
 
             first.animate([
                 { transform: `translateY(-${RYOMMCAT_DROP_HEIGHT}px) scale3d(1, 1, 1)`, opacity: 0, offset: 0 },
                 { transform: `translateY(-${RYOMMCAT_DROP_HEIGHT}px) scale3d(1, 1, 1)`, opacity: 1, offset: 0.02, easing: 'ease-in' },
-                ...RYOMMCAT_JIGGLE_KEYFRAMES.map(frame => ({
+                ...RYOMMCAT_LANDING_JIGGLE_KEYFRAMES.map(frame => ({
                     ...frame,
                     transform: `translateY(0) ${frame.transform}`,
                     opacity: 1,
                     offset: remap(frame.offset)
                 }))
             ], {
-                duration: totalDuration,
+                duration: landingDuration,
                 easing: 'ease-in-out'
             });
         }
