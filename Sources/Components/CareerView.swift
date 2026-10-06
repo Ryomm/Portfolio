@@ -5,6 +5,7 @@ struct CareerView: HTML {
     var body: some HTML {
         Text("Career")
             .font(.title2)
+        Divider()
 
         VStack(alignment: .leading, spacing: .medium) {
             careerSection(

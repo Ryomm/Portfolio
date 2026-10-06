@@ -15,14 +15,14 @@ struct FooterView: HTML {
                     CustomAction("ryommcatJiggle(this)")
                 }
 
-            HStack {
+            Section {
                 Text("© 2026 Ryomm")
                 Text {
                     "Created in Swift with "
                     Link("Ignite", target: URL(static: "https://github.com/twostraws/Ignite"))
                 }
             }
-            .horizontalAlignment(.center)
+            .class("d-flex", "flex-column", "flex-md-row", "justify-content-center", "align-items-center", "gap-3")
         }
         .padding()
         .margin(.top, .xLarge)

@@ -4,8 +4,6 @@ import Ignite
 @main
 struct IgniteWebsite {
     static func main() async {
-        // Works need network access (OGP lookups), so resolve them before
-        // publishing and hand the result to the site as plain data.
         let works = await WorkResolver.resolve(Work.all)
         var site = PortfolioSite(works: works)
 
@@ -19,9 +17,10 @@ struct IgniteWebsite {
 
 struct PortfolioSite: Site {
     var name = "Ryomm"
-    var titleSuffix = " – Portfolio"
     var url = URL(static: "https://ryomm.com")
+    var language: Language = .japanese
     var builtInIconsEnabled = true
+    var favicon: URL? { URL(static: "/images/ryommcat.png") }
 
     var author = "Ryomm / Ryoko Matsusaka"
 

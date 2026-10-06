@@ -3,8 +3,8 @@ import Ignite
 
 struct ProfileView: HTML {
     var body: some HTML {
-        VStack(alignment: .leading, spacing: 32) {
-            VStack(alignment: .leading, spacing: 8) {
+		VStack(alignment: .leading, spacing: .large) {
+			VStack(alignment: .leading, spacing: .small) {
                 Script(file: "/js/ryommcat-jiggle.js")
                 Image(decorative: "/images/ryommcat.png")
                     .resizable()
@@ -22,7 +22,7 @@ struct ProfileView: HTML {
                     .font(.body)
             }
 
-            VStack(alignment: .leading, spacing: 4) {
+			VStack(alignment: .leading, spacing: .xSmall) {
                 ForEach(SocialLink.allCases) { link in
                     Link(link.title, target: link.url)
                         .target(.blank)

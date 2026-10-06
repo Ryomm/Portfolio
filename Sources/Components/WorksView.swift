@@ -7,6 +7,7 @@ struct WorksView: HTML {
     var body: some HTML {
         Text("Works")
             .font(.title2)
+        Divider()
 
         VStack(alignment: .leading, spacing: .medium) {
             Script(file: "/js/works-filter.js")
@@ -14,7 +15,6 @@ struct WorksView: HTML {
                 filterChip(title: "All", key: "all", isSelected: true)
                 filterChip(for: .talk)
                 filterChip(for: .article)
-                filterChip(for: .project)
             }
             .aria(.label, "Filter works by kind")
 

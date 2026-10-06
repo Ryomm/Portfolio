@@ -1,15 +1,16 @@
 <!doctype html>
-<html lang="en" data-light-theme="light" data-dark-theme="dark">
+<html lang="ja" data-light-theme="light" data-dark-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Ryomm / Ryoko Matsusaka" />
     <meta name="generator" content="Ignite v0.6.9" />
-    <title>Home – Portfolio</title>
+    <title>Ryomm / Ryoko Matsusaka</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/css/bootstrap-icons.min.css" rel="stylesheet" />
     <link href="/css/ignite-core.min.css" rel="stylesheet" />
     <link href="https://ryomm.com/" rel="canonical" />
+    <link href="/images/ryommcat.png" rel="icon" />
     <link type="application/rss+xml" title="RSS Feed" href="/feed.rss" rel="alternate" />
     <script>(function() {
     function getThemePreference() {
@@ -56,8 +57,8 @@
 })();
 </script>
     <meta property="og:site_name" content="Ryomm" />
-    <meta property="og:title" content="Home" />
-    <meta name="twitter:title" content="Home" />
+    <meta property="og:title" content="Ryomm / Ryoko Matsusaka" />
+    <meta name="twitter:title" content="Ryomm / Ryoko Matsusaka" />
     <meta property="og:url" content="https://ryomm.com/" />
     <meta name="twitter:domain" content="ryomm.com" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -65,16 +66,16 @@
   </head>
   <body class="container">
     <div class="ig-main-content">
-      <div class="row justify-content-start" style="padding: 20px">
+      <div role="main" class="row justify-content-start" style="padding: 20px">
         <div class="col-md-4 align-self-start g-5">
-          <div class="vstack" style="gap: 32px">
-            <div class="mb-0 align-self-start vstack" style="gap: 8px">
+          <div class="vstack gap-4">
+            <div class="mb-0 align-self-start vstack gap-2">
               <script src="/js/ryommcat-jiggle.js" class="mb-0 align-self-start"></script>
               <img src="/images/ryommcat.png" alt="" class="img-fluid mb-0 align-self-start" style="width: 200px; height: 200px; cursor: pointer; transform-origin: 50% 100%; user-select: none" onclick="ryommcatJiggle(this)" />
               <h1 class="mb-0 align-self-start">Ryomm</h1>
               <p class="mb-0 align-self-start">iOS app developurr (pun intended)</p>
             </div>
-            <div class="mb-0 align-self-start vstack" style="gap: 4px">
+            <div class="mb-0 align-self-start vstack gap-1">
               <a target="_blank" rel="noopener noreferrer" href="https://x.com/__ryomm" class="text-info mb-0 align-self-start link-plain">X</a>
               <a target="_blank" rel="noopener noreferrer" href="https://github.com/Ryomm" class="text-info mb-0 align-self-start link-plain">GitHub</a>
               <a target="_blank" rel="noopener noreferrer" href="https://speakerdeck.com/ryomm" class="text-info mb-0 align-self-start link-plain">SpeakerDeck1</a>
@@ -85,9 +86,10 @@
           </div>
         </div>
         <div class="col-md-8 align-self-start g-5">
-          <div class="vstack" style="gap: 16px">
-            <div class="mb-0 align-self-start">
+          <div class="vstack gap-5">
+            <div class="mb-0 align-self-start" style="width: 100.0%">
               <h2>Career</h2>
+              <hr />
               <div class="vstack gap-3">
                 <div class="mb-0 align-self-start vstack gap-2">
                   <h3 class="mb-0 align-self-start">Work Experience</h3>
@@ -140,13 +142,13 @@
             </div>
             <div class="mb-0 align-self-start">
               <h2>Works</h2>
+              <hr />
               <div class="vstack gap-3">
                 <script src="/js/works-filter.js" class="mb-0 align-self-start"></script>
                 <div class="mb-0 align-self-start hstack gap-2" aria-label="Filter works by kind">
                   <button type="button" style="--bs-btn-color: var(--bs-body-color); --bs-btn-bg: var(--bs-secondary-bg); --bs-btn-border-color: transparent; --bs-btn-hover-color: var(--bs-body-color); --bs-btn-hover-bg: var(--bs-border-color); --bs-btn-hover-border-color: transparent; --bs-btn-active-color: var(--bs-body-bg); --bs-btn-active-bg: var(--bs-emphasis-color); --bs-btn-active-border-color: transparent; --bs-btn-font-weight: 500" class="rounded-pill active mb-0 align-self-center btn btn-sm" data-work-filter="all" aria-pressed="true" onclick="filterWorks(this)">All</button>
                   <button type="button" style="--bs-btn-color: var(--bs-body-color); --bs-btn-bg: var(--bs-secondary-bg); --bs-btn-border-color: transparent; --bs-btn-hover-color: var(--bs-body-color); --bs-btn-hover-bg: var(--bs-border-color); --bs-btn-hover-border-color: transparent; --bs-btn-active-color: var(--bs-body-bg); --bs-btn-active-bg: var(--bs-emphasis-color); --bs-btn-active-border-color: transparent; --bs-btn-font-weight: 500" class="rounded-pill mb-0 align-self-center btn btn-sm" data-work-filter="talk" aria-pressed="false" onclick="filterWorks(this)">Talk</button>
                   <button type="button" style="--bs-btn-color: var(--bs-body-color); --bs-btn-bg: var(--bs-secondary-bg); --bs-btn-border-color: transparent; --bs-btn-hover-color: var(--bs-body-color); --bs-btn-hover-bg: var(--bs-border-color); --bs-btn-hover-border-color: transparent; --bs-btn-active-color: var(--bs-body-bg); --bs-btn-active-bg: var(--bs-emphasis-color); --bs-btn-active-border-color: transparent; --bs-btn-font-weight: 500" class="rounded-pill mb-0 align-self-center btn btn-sm" data-work-filter="article" aria-pressed="false" onclick="filterWorks(this)">Article</button>
-                  <button type="button" style="--bs-btn-color: var(--bs-body-color); --bs-btn-bg: var(--bs-secondary-bg); --bs-btn-border-color: transparent; --bs-btn-hover-color: var(--bs-body-color); --bs-btn-hover-bg: var(--bs-border-color); --bs-btn-hover-border-color: transparent; --bs-btn-active-color: var(--bs-body-bg); --bs-btn-active-bg: var(--bs-emphasis-color); --bs-btn-active-border-color: transparent; --bs-btn-font-weight: 500" class="rounded-pill mb-0 align-self-center btn btn-sm" data-work-filter="project" aria-pressed="false" onclick="filterWorks(this)">Project</button>
                 </div>
                 <div class="card" style="transition: background-color 0.2s ease" data-work-kind="talk" onmouseover="this.unhoveredStyle = this.style.cssText;
 this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.cssText = this.unhoveredStyle;">
@@ -320,15 +322,6 @@ this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.css
                           <p class="text-body-secondary mb-0 align-self-start">2025.01.20</p>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card" data-work-kind="project">
-                  <div class="card-body">
-                    <div class="vstack gap-1">
-                      <span class="mb-0 align-self-start badge bg-warning-subtle text-warning-emphasis rounded-pill">Project</span>
-                      <h5 class="mb-0 align-self-start">あああ</h5>
-                      <p class="text-body-secondary mb-0 align-self-start">2025.01.01</p>
                     </div>
                   </div>
                 </div>
@@ -659,6 +652,23 @@ this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.css
                     </div>
                   </div>
                 </div>
+                <div class="card" data-work-kind="project">
+                  <div class="card-body">
+                    <div class="row justify-content-center" style="row-gap: 16px">
+                      <div class="col-md-4 align-self-center">
+                        <img src="/images/serialcodeHelper.png" alt="" class="img-fluid" style="max-height: 200px; border-radius: 8px" />
+                      </div>
+                      <div class="col-md-8 align-self-center">
+                        <div class="vstack gap-1">
+                          <span class="mb-0 align-self-start badge bg-warning-subtle text-warning-emphasis rounded-pill">Project</span>
+                          <h5 class="mb-0 align-self-start">シリアルコードおたすけマン</h5>
+                          <p class="mb-0 align-self-start">Yahoo Hack Day 2021 Online</p>
+                          <p class="text-body-secondary mb-0 align-self-start">2021.03.20</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -668,9 +678,9 @@ this.style.backgroundColor = 'var(--bs-tertiary-bg)'" onmouseout="this.style.css
     <div class="mt-5 vstack gap-2" style="padding: 20px">
       <script src="/js/ryommcat-jiggle.js" class="mb-0 align-self-center"></script>
       <img src="/images/ryommcat.png" alt="" class="img-fluid mb-0 align-self-center" style="width: 50px; height: 50px; cursor: pointer; transform-origin: 50% 100%; user-select: none" onclick="ryommcatJiggle(this)" />
-      <div class="text-center mb-0 align-self-center hstack gap-3">
-        <p class="mb-0 align-self-center">© 2026 Ryomm</p>
-        <p class="mb-0 align-self-center">Created in Swift with <a href="https://github.com/twostraws/Ignite">Ignite</a></p>
+      <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mb-0 align-self-center">
+        <p>© 2026 Ryomm</p>
+        <p>Created in Swift with <a href="https://github.com/twostraws/Ignite">Ignite</a></p>
       </div>
     </div>
     <script src="/js/bootstrap.bundle.min.js"></script>

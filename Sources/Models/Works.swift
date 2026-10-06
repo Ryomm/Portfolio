@@ -145,11 +145,11 @@ enum Work: Sendable {
             description: "iOSDC Japan 2026",
             thumbnail: nil),
         .project(
-            title: "あああ",
-            date: "2025-01-01",
+            title: "シリアルコードおたすけマン",
+            date: "2021-03-20",
             url: nil,
-            description: nil,
-            thumbnail: nil)
+            description: "Yahoo Hack Day 2021 Online",
+            thumbnail: "/images/serialcodeHelper.png")
     ]
 }
 
@@ -160,7 +160,6 @@ struct WorkItem: Sendable {
     let dateText: String
     let description: String?
     let url: String?
-    /// Absolute URL or a site-relative path such as `/images/foo.png`.
     let thumbnail: String?
 }
 
