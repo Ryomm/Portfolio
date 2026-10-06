@@ -5,15 +5,20 @@ struct FooterView: HTML {
     public var body: some HTML {
         VStack(spacing: .small) {
             Script(file: "/js/ryommcat-jiggle.js")
-            Image(decorative: "/images/ryommcat.png")
-                .resizable()
-                .frame(width: 50, height: 50)
-                .style(.cursor, "pointer")
-                .style(.transformOrigin, "50% 100%")
-                .style(.userSelect, "none")
-                .onClick {
-                    CustomAction("ryommcatJiggle(this)")
-                }
+            Script(file: "/js/ryommcat-multiply.js")
+            Section {
+                Image(decorative: "/images/ryommcat.png")
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                    .style(.cursor, "pointer")
+                    .style(.transformOrigin, "50% 100%")
+                    .style(.userSelect, "none")
+                    .onClick {
+                        CustomAction("ryommcatClick(this)")
+                    }
+            }
+            .id("ryommcat-container")
+            .class("d-flex", "justify-content-center", "align-items-center", "gap-2")
 
             Section {
                 Text("© 2026 Ryomm")
