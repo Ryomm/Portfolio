@@ -3,6 +3,7 @@ import Ignite
 
 struct Home: StaticPage {
     var title = "Ryomm / Ryoko Matsusaka"
+    var image: URL? { URL(static: "https://ryomm.com/images/ogpimage.png") }
 
     let works: [WorkItem]
 
